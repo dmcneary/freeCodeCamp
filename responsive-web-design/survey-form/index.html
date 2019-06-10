@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">"
+    <title>freeCodeCamp Survey Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mx-auto">
+            <div class="col-8">
+                <h1 id="title">Customer Survey</h1>
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <div id="form-zone" class="col-8">
+                <p id="description">How was your experience? How can we improve?</p>
+                <form id="survey-form">
+                    <div class="form-group">
+                        <label for="name" id="name-label">First name</label>
+                        <input type="text" class="form-control" id="name" placeholder="First name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputLastName">Last name</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="number" id="number-label">Age</label>
+                        <input type="number" class="form-control" id="number" placeholder="Enter your age" min="1" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <h6>How likely are you recommend us to a friend or colleague?</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioQuestion" id="radio1" value="option1">
+                        <label class="form-check-label" for="radio1">
+                            Strongly likely
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioQuestion" id="radio2" value="option2">
+                        <label class="form-check-label" for="radio2">
+                            Somewhat likely
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioQuestion" id="radio3" value="option3">
+                        <label class="form-check-label" for="radio3">
+                            Somewhat unlikely
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioQuestion" id="radio4" value="option4">
+                        <label class="form-check-label" for="radio4">
+                            Strongly unlikely
+                        </label>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="dropdown">
+                            Which of the following is your favorite feature about us?
+                        </label>
+                        <select id="dropdown" class="form-control">
+                            <option>Ease of use</option>
+                            <option>Customer service</option>
+                            <option>Product selection/availability</option>
+                            <option>Technical support</option>
+                            <option>Community</option>
+                        </select>
+                    </div>
+                    <h6>Which of the following are you interested in?</h6>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck1" value="option1">
+                        <label class="form-check-label" for="formCheck1">Juggling</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck2" value="option2">
+                        <label class="form-check-label" for="formCheck2">Canoeing</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck3" value="option3">
+                        <label class="form-check-label" for="formCheck3">Candles</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck4" value="option4">
+                        <label class="form-check-label" for="formCheck4">Lollapalooza</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck5" value="option5">
+                        <label class="form-check-label" for="formCheck5">Widgets</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck6" value="option6">
+                        <label class="form-check-label" for="formCheck6">Tin</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck7" value="option7">
+                        <label class="form-check-label" for="formCheck7">Left-handed tools</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck8" value="option8">
+                        <label class="form-check-label" for="formCheck8">Phone books</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck9" value="option9">
+                        <label class="form-check-label" for="formCheck9">Yucca</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="formCheck10" value="option10">
+                        <label class="form-check-label" for="formCheck10">Fuzz</label>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="textarea">Anything else you'd like to add?</label>
+                        <textarea class="form-control" id="textarea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
