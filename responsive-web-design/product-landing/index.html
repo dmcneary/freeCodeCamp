@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp - Product Landing Page</title>
+    <script src="https://kit.fontawesome.com/ab65767436.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    
 </head>
+
 <body>
     <header id="header">
-        <img src="assets/images/#" id="header-img" />
+        <img src="assets/images/sunny.png" id="header-img" />
         <nav id="nav-bar">
-            <h3 class="nav-brand">
-                Lodi
-            </h3>
+            <h1 class="nav-brand">
+                Beautiful Lodi, California
+            </h1>
             <ul>
                 <li>
                     <a class="nav-link" href="#features">Features</a>
@@ -27,42 +32,107 @@
     </header>
     <div class="container">
         <div class="hero">
-            <h2>Remember</h2>
+            <h2>California's Hidden Wine Country</h2>
             <h1>LODI</h1>
-            <form id="form">
+            <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
                 <label for="email">
                     Sign up to learn more about exciting Lodi, CA
                 </label>
                 <input type="email" id="email" placeholder="Enter e-mail...">
-                <button><input id="submit" type="submit"></button>
+                <input id="submit" type="submit">
             </form>
         </div>
         <div id="features">
-            <i class="fas fa-mountain"></i>
+            <ul>
+                <li class="clearfix">
+                    <span class="ico"><i class="fas fa-wine-glass-alt"></i></span><h4>Magical wines</h4>
+                    <p>Grapes are Lodi’s history - the region was desolate until grapes brought forth their bounty. They thrive in this perfect temperate climate and loamy soil, which earned the title Lodi Appellation and the "Zinfandel capital of the world". Today there are more than 85 wineries in the region.</p>
+                </li>
+                <li class="clearfix">
+                    <span class="ico"><i class="fas fa-biking"></i></span><h4>Heavenly cycling</h4>
+                    <p>
+                        Cyclists love the scenic back roads of this part of the Central Valley, pausing at the many tasting room “rest stops” along the way.
+                    </p>
+                </li>
+                <li class="clearfix">
+                    <span class="ico"><i class="fas fa-campground"></i></span><h4>Iconic natural beauty</h4>
+                    <p>Nearby on the central California coast along the meandering byways of the California Delta, Yogi Bear's Jellystone Park offers something for everyone! This is Delta camping at its best, with Deluxe Cabins and everything you need for a great camping vacation.</p>
+                </li>
+            </ul>
         </div>
-        <div id="video">
-            <video id="video"></video>
+        <div id="video-wrapper">
+            <iframe id="video" width="auto" height="100%" src="https://www.youtube.com/embed/GEgjnxS49GE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="pricing">
             <div class="card">
-                <p>
-                    Sample plan 1
-                </p>
+                <h4>3 days, 4 nights</h4>
+                <p>$500</p>
+                <ul>
+                    <li>
+                        Airfare
+                    </li>
+                    <li>
+                        Hotel
+                    </li>
+                    <li>
+                        FREE BREAKFAST!
+                    </li>
+                </ul>
             </div>
             <div class="card">
-                <p>
-                    Sample plan 2
-                </p>
+                    <h4>5 days, 6 nights</h4>
+                    <p>$700</p>
+                    <ul>
+                        <li>
+                            Airfare
+                        </li>
+                        <li>
+                            Hotel
+                        </li>
+                        <li>
+                            FREE BREAKFAST!
+                        </li>
+                        <li>
+                            One day COMPLIMENTARY CAR RENTAL!
+                        </li>
+                    </ul>
             </div>
             <div class="card">
-                <p>
-                    Sample plan 3
-                </p>
+                    <h4>7 days, 8 nights</h4>
+                    <p>$1000</p>
+                    <ul>
+                        <li>
+                            Airfare
+                        </li>
+                        <li>
+                            Hotel
+                        </li>
+                        <li>
+                            FREE BREAKFAST!
+                        </li>
+                        <li>
+                            COMPLIMENTARY CAR RENTAL!
+                        </li>
+                    </ul>
             </div>
         </div>
-
     </div>
+    <footer>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Privacy</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Careers</a>
+                </li>
+            </ul>
+            <p>Copyright &copy; David McNeary 2019</p>
+    </footer>
     <script src="./assets/js/script.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
