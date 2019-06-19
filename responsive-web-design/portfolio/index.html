@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio - david mcneary</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar"> 
+        <img src="assets/images/icons/headericon.png" />
+        <p class="navbar-brand">David McNeary</p>
+        <div class="float-right">
+                <a href="./assets/resume.pdf"target="_blank"><i class="fas fa-file"></i></a><br>
+                <a href="https://github.com/dmcneary/" target="_blank"><i class="fab fa-github-alt"></i></a><br>
+                <a href="https://www.linkedin.com/in/davidmcneary/" target="_blank"><i class="fab fa-linkedin-in"></i></a><br>
+            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="parallax fade-in"></div>
+
+    <div class="container">
+        <div class="row fade-in clearfix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="media mb-3" id="about">
+                        <section class="media-body vh" id="welcome-section">
+                            <h1>I am a full-stack software engineer with a strong affinity for JavaScript solutions.</h1>
+                            <img src="assets/images/mech.jpg" class="profile-picture float-left mr-2" alt="profile picture">
+                            <p>Presently, I am employed as a lead service technician at Cynergy Cycles, a leading
+                                bicycle retailer in Santa Monica, CA. I'm particularly yearning to dive into the
+                                intersection of tech and bicycling - fitness trackers, GPS mapping and tracking, and
+                                electric bicycles pique my interest.</p>
+                            <p>I recently completed The Coding Bootcamp at UCLA Extension, and hold a certification for full-stack web development in the MERN stack. I am very intrigued by React.js development with Redux, GIS/GPS interaction, and exploring the many possibilities of Node.js.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="row mx-auto mb-5 fade-in text-center " id="contact">
+            <span class="mx-auto d-block">email: damnthatsgood@gmail.com</span>
+            <span class="mx-3 d-block">phone: 555-353-2453</span>
+            <span class="mx-auto d-block">twitter: @fart</span>
+        </section>
+
+        <section class="row mx-auto mb-5 fade-in vh" id="projects">
+
+            <header class="col-12 text-center">
+                <h1 class="display-3">Portfolio</h1>
+            </header>
+
+            <div class="row mb-5 ml-3">
+
+                <div class="col-md-4">
+                    <div class="card text-center project-tile">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img class="card-img-top screenshot" src="assets/images/bamazon.JPG"
+                                        alt="Screenshot">
+                                        <p>A virtual storefront CLI</p>
+                                </div>
+                                <div class="back">
+                                    <div class="card-body">
+                                        <h6 class="text-uppercase">Bamazon CLI</h6>
+                                        <span>
+                                            <a href="https://github.com/dmcneary/bamazon-cli" target="_blank">Github</a>
+                                        </span>
+                                        <dl>
+                                            <dt>Languages & tech used:</dt>
+                                            <dd>JavaScript</dd>
+                                            <dd>Node.js</dd>
+                                            <dd>npm</dd>
+                                            <dd>MySQL</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center project-tile">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img class="card-img-top screenshot" src="assets/images/fit-monkeys.jpg"
+                                        alt="Screenshot">
+                                    <p>A fitness tracker with mappable routes</p>
+                                </div>
+                                <div class="back">
+                                    <div class="card-body">
+                                        <h6 class="text-uppercase">Fit Monkeys</h6>
+                                        <span>
+                                            <a href="https://obscure-wave-97311.herokuapp.com" target="_blank">View
+                                                site</a> |
+                                            <a href="https://github.com/dmcneary/final-project" target="_blank">Github</a>
+                                        </span>
+                                        <dl>
+                                            <dt>Languages & tech used:</dt>
+                                            <dd>React.js with React Router</dd>
+                                            <dd>CSS3 with Bootstrap 4</dd>
+                                            <dd>Node.js with Express</dd>
+                                            <dd>MongoDB with Mongoose</dd>
+                                            <dd>Passport.js and BCrypt</dd>
+                                            <dd>Leaflet.js and leaflet-routing-machine</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center  project-tile">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img class="card-img-top screenshot" src="assets/images/friend-finder.PNG"
+                                        alt="Screenshot">
+                                    <p>Finding new friends has never been so easy!</p>
+                                </div>
+                                <div class="back">
+                                    <div class="card-body">
+                                        <h6 class="text-uppercase">Friend Finder</h6>
+                                        <span>
+                                            <a href="https://secure-peak-87164.herokuapp.com/" target="_blank">View
+                                                site</a> |
+                                            <a href="https://github.com/dmcneary/friend-finder"
+                                                target="_blank">Github</a>
+                                        </span>
+                                        <dl>
+                                            <dt>Languages & tech used:</dt>
+                                            <dd>HTML5</dd>
+                                            <dd>CSS3 & Bootstrap</dd>
+                                            <dd>JavaScript & jQuery</dd>
+                                            <dd>Node.js and Express.js</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="row align-start-top fixed-bottom">
+            <div class="col">&copy; 2018</div>
+            <div class="col">
+                <span>
+                    <a href="https://www.linkedin.com/in/davidmcneary/" target="_blank"><img
+                            src="assets/images/icons/linked.png" alt="LinkedIn profile badge" class="link-badge"></a>
+                    <a id="profile-link" href="https://github.com/dmcneary/" target="_blank"><img src="assets/images/icons/github.png"
+                            alt="GitHub profile badge" class="link-badge"></a>
+                    <a href="https://www.instagram.com/david.mcneary/" target="_blank"><img
+                            src="assets/images/icons/ig.png" alt="Instagram profile badge" class="link-badge"></a>
+                    <a href="https://www.strava.com/athletes/144397" target="_blank"><img
+                            src="assets/images/icons/strava.png" alt="Strava profile badge" class="link-badge"></a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
