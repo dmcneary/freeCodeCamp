@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px #216EA3;
 }
 
-#contact {
+/*#contact {
     position: relative;
     left: 15px;
 }
@@ -47,24 +47,28 @@ nav {
     background-color: #21A356;
     margin-bottom: 0px;
     border-bottom: 8px solid #343a40;
-}
+}*/
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+nav {
+    color: #FFF;
+    text-align: center;
+    background: #21A356;
+    border-bottom: 8px solid #343a40;
 }
-
 /* main */
 section {
-    width: 100%;
+    min-width: 100%;
     padding: 10px;
 }
 
-.vh {
-    vertical-align: middle;
-    height: 100vh;
+section > h1 {
+    margin-bottom: 10px;
 }
+
+.vert-mid {
+    vertical-align: middle;
+}
+
 .screenshot {
     max-height: 100%;
     max-width: auto;
@@ -74,9 +78,6 @@ section {
     background-color: #216EA3;
 }
 
-.card {
-    vertical-align: middle;
-}
 .profile-picture {
     width: auto;
     height: 200px;
@@ -87,7 +88,7 @@ section {
     filter: saturate(7);
 }
 
-.fade-in{
+.fade-in {
     animation-duration: 3s;
     animation-name: fadein;
 }
@@ -160,6 +161,26 @@ footer {
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-width : 480px) {
+    span, p {
+        font-size: 2vh;
+    }
+
+    .container, .section {
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    .jumbotron {
+        margin-top: 10vh;
+    }
+
+    section > h1 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+}
+
 @media only screen and (max-device-width: 1366px) {
     .parallax {
     max-width: 100%;
