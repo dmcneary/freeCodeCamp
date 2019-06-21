@@ -7,237 +7,62 @@ html {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(155, 119, 64);
-    color: #DDD;
-    padding: 0px;
-    margin: 0px;
-}
-
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-}
-
-header {
-    text-align: center;
-    background-color: rgb(153, 229, 219);
-    color: #111;
-}
-
-header {
-    display: block;
-    width: 100%;
-    position: fixed;
-    margin-top: 0px;
-    z-index: 10000;
-}
-
-header ul, footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-header li, footer li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    color: white;
-    text-shadow: 1px 1px black;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-  
-li a:hover {
-    background-color: rgb(48, 105, 230);
-}
-
-header img {
-    height: 64px;
-    width: 64px;
-}
-
-.nav-brand {
-    text-transform: uppercase;
-    font-size: 48px;
-}
-
-.hero {
-    margin-top: 200px;
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    background-image: url('../images/hero-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.hero h1, .hero h2 {
-    margin-top: 50px;
-    font-size: 48px;
-    font-weight: 800;
-    text-shadow: #222 2px 2px;
-}
-
-form#form {
-    position: relative;
-    top: 100px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#form label {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(153, 229, 219);
+    background-color: lightblue;
     color: #222;
+    padding: 0px;
+    margin: 0px;
 }
 
-#form #submit {
-    background-color: rgb(48, 105, 230);
-    width: 3vw;
-    height: 2vh;
-    border: 2px dashed white;
+#title-bar {
+    background-color: lightseagreen;
 }
 
-.ico {
-    float: left;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-#features h4 {
+#title-bar > p {
+    font-size: 24px;
     text-align: center;
-    font-weight: 800;
+}
+
+#title-bar > h1{
+    font-size: 32px;
+    text-align: center;
+}
+
+nav {
+    max-width: 30%;
     display: inline;
+    position: fixed;
+    border-right: 3px solid blue;
 }
 
-#features, #video, #pricing {
-    width: 100%;
+#navbar li {
+    background-color: lightblue;
+    width: 
+}
+
+#navbar li:hover {
+    background-color: darkblue;
+    color: #DDD;
+}
+
+.main-section > header {
+    border: 1px solid black;
+    border-left: 4px solid blue;
+    background-color: cadetblue;
+}
+
+.border-text-box {
+    border: 1px solid black;
+}
+
+#inspect > ul {
+    border-left: 4px sold blue;
+    border-right: 4px sold blue;
+}
+
+img {
     display: block;
-    margin-top: 20px;
 }
 
-#features ul {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
-    display: block;
-}
-
-#video-wrapper, #features {
-    width: 80vw;
-    height: 60vh;
-}
-
-#pricing {
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-flex;
-    justify-content: space-around;
-}
-
-.card {
-    height: 350px;
-    width: 300px;
-    display: inline-block;
-    margin: 10px;
-    padding-right: 20px;
-    background-color: #DDD;
-    color: #111;
-    text-align: center;
-}
-
-#pricing ul {
-    list-style-type: none;
-    text-align: justify;
-}
-
-#pricing li {
-    overflow-wrap: break-word;
-}
-.card h4 {
-    background-color: #AAA;
-}
-
-.card p {
-    color: #222;
-    margin: auto;
-}
-
-footer {
-    background-color: rgb(153, 229, 219);
-    color: #111;
-    display: block;
-    width: 100%;
-    text-align: right;
-}
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-    .hero {
-        max-width: 420px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nav-brand {
-        font-size: 50%;
-    }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-    .hero {
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nav-brand {
-        font-size: 80%;
-    }
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-    .hero {
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nav-brand {
-        font-size: 100%;
-    }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-    .hero {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nav-brand {
-        font-size: 100%;
-    }
+#legal > h5, #legal > p {
+    font-family: 'Times New Roman', Times, serif
 }
