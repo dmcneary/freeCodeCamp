@@ -38,14 +38,13 @@ class DisplayMessages extends React.Component {
         Submit
         </button>
         <ul>
-        { 
-          this.state.messages.map(li => {
-          const items = '<li>' + li + '</li>';
-         })
+        { this.state.messages.map(li => {
+            `<li>${li}</li>`;
+           })
         }
         </ul>
         { /* change code above this line */ }
       </div>
     );
   }
-  }
+}
