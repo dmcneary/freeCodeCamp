@@ -1,0 +1,83 @@
+body {
+	background-color: #b8b83b;
+	color: #333;
+	font-family: sans-serif;
+}
+
+#quote-box {
+	position: relative;
+	margin-top: 25%;
+	background-color: #dede92;
+}
+
+#text {
+	text-align: center;
+	animation: fadeIn ease 2s;
+	-webkit-animation: fadeIn ease 2s;
+	-moz-animation: fadeIn ease 2s;
+	-o-animation: fadeIn ease 2s;
+	-ms-animation: fadeIn ease 2s;
+}
+
+#author {
+	text-align: right;
+	animation: fadeIn ease 6s;
+	-webkit-animation: fadeIn ease 6s;
+	-moz-animation: fadeIn ease 6s;
+	-o-animation: fadeIn ease 6s;
+	-ms-animation: fadeIn ease 6s;
+}
+
+#tweet-quote img{
+ height: 39px;
+}
+
+#new-quote, #tweet-quote {
+	float: right;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
