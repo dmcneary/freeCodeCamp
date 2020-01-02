@@ -1,13 +1,14 @@
 body {
     background-color: #ddd;
     font-size: 18px;
-    color: #010101;
 }
 
-.container {
-    position: relative;
-}
-
-.header-banner {
+header {
     border-bottom-left-radius: 30%;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
+#back {
+	float: left;
 }
